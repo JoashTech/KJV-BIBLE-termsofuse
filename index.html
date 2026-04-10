@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Terms of Use - KJV Offline Bible App</title>
-    <link rel="icon" type="image/x-icon" href="https://joshtechapps.github.io/KJV-Bible-Privacy/favicon.ico">
+    <title>Terms of Use – JoshTechApps Bible Applications</title>
+    <link rel="icon" type="image/x-icon" href="https://joshtechapps.netlify.app/favicon.ico">
     <style>
         :root {
             --primary-color: #2c3e50;
@@ -14,13 +14,11 @@
             --light-bg: #f8f9fa;
             --border-color: #ddd;
         }
-       
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-       
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
             line-height: 1.6;
@@ -30,9 +28,8 @@
             padding: 20px;
             background-color: var(--light-bg);
         }
-       
         header {
-            background: var(--primary-color);
+            background: linear-gradient(135deg, #1a202c 0%, #2c3e50 100%);
             color: white;
             padding: 2rem;
             border-radius: 10px;
@@ -40,24 +37,20 @@
             text-align: center;
             box-shadow: 0 4px 6px rgba(0,0,0,0.1);
         }
-       
         header h1 {
             font-size: 2.5rem;
             margin-bottom: 0.5rem;
         }
-       
         header p {
             font-size: 1.1rem;
             opacity: 0.9;
         }
-       
         .container {
             background: white;
             padding: 2rem;
             border-radius: 10px;
             box-shadow: 0 2px 4px rgba(0,0,0,0.05);
         }
-       
         .last-updated {
             background: #fff3cd;
             border-left: 4px solid #ffc107;
@@ -65,32 +58,26 @@
             margin-bottom: 2rem;
             border-radius: 5px;
         }
-       
         h2 {
             color: var(--primary-color);
             margin: 2rem 0 1rem;
             padding-bottom: 0.5rem;
             border-bottom: 2px solid var(--secondary-color);
         }
-       
         h3 {
             color: var(--primary-color);
             margin: 1.5rem 0 0.5rem;
             font-size: 1.2rem;
         }
-       
         p {
             margin-bottom: 1rem;
         }
-       
         ul, ol {
             margin: 1rem 0 1rem 2rem;
         }
-       
         li {
             margin-bottom: 0.5rem;
         }
-       
         .highlight-box {
             background: #e8f4fc;
             border-left: 4px solid var(--secondary-color);
@@ -98,7 +85,6 @@
             margin: 1.5rem 0;
             border-radius: 5px;
         }
-       
         .warning-box {
             background: #fde8e8;
             border-left: 4px solid var(--accent-color);
@@ -106,28 +92,20 @@
             margin: 1.5rem 0;
             border-radius: 5px;
         }
-       
         table {
             width: 100%;
             border-collapse: collapse;
             margin: 1.5rem 0;
         }
-       
         th, td {
             padding: 12px;
             text-align: left;
             border-bottom: 1px solid var(--border-color);
         }
-       
         th {
             background: var(--light-bg);
             font-weight: 600;
         }
-       
-        tr:hover {
-            background: var(--light-bg);
-        }
-       
         .contact-info {
             background: var(--light-bg);
             padding: 2rem;
@@ -135,7 +113,6 @@
             margin-top: 2rem;
             text-align: center;
         }
-       
         footer {
             text-align: center;
             margin-top: 3rem;
@@ -143,22 +120,62 @@
             color: #666;
             border-top: 1px solid var(--border-color);
         }
-       
-        .website-link {
-            background: #e3f2fd;
+        .quick-nav {
+            background: #f7fafc;
+            border-radius: 15px;
             padding: 20px;
-            border-radius: 12px;
-            text-align: center;
-            margin: 30px 0;
-            border: 2px solid #bbdefb;
+            margin-bottom: 30px;
+            border: 1px solid #e2e8f0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
         }
-        .website-link a {
-            font-size: 1.2em;
-            color: #1e88e5;
-            font-weight: bold;
+        .quick-nav a {
+            padding: 8px 16px;
+            background: white;
+            border-radius: 50px;
+            color: #4A90E2;
             text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9em;
+            border: 1px solid #e2e8f0;
+            transition: all 0.3s;
         }
-       
+        .quick-nav a:hover {
+            background: #4A90E2;
+            color: white;
+            border-color: #4A90E2;
+        }
+        .app-list {
+            background: #f0f8ff;
+            padding: 20px;
+            border-left: 4px solid #2980b9;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+        .app-list h3 {
+            margin-top: 0;
+        }
+        .app-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 15px;
+        }
+        .app-links a {
+            background: white;
+            padding: 8px 16px;
+            border-radius: 20px;
+            text-decoration: none;
+            color: #2c3e50;
+            border: 1px solid #d0d7de;
+            font-size: 0.9em;
+        }
+        .app-links a:hover {
+            background: #e3f2fd;
+            border-color: #3498db;
+        }
         @media (max-width: 768px) {
             body { padding: 10px; }
             header { padding: 1.5rem; }
@@ -167,161 +184,163 @@
             table { font-size: 0.9rem; }
             th, td { padding: 8px; }
         }
-       
-        @media print {
-            body { background: white; max-width: none; }
-            .no-print { display: none; }
-        }
     </style>
 </head>
 <body>
     <header>
         <h1>Terms of Use</h1>
-        <p>KJV Offline Bible App</p>
-        <p><em>Last Updated: January 19, 2026</em></p>
+        <p>JoshTechApps Bible Applications</p>
+        <p><em>Last Updated: April 10, 2026</em></p>
     </header>
-   
+
     <div class="container">
         <div class="last-updated">
-            <strong>Important Notice:</strong> These Terms of Use govern your use of the KJV Offline Bible App and its in-app purchases. By using the app or making any purchase, you agree to be bound by these terms.
+            <strong>Important Notice:</strong> These Terms of Use govern your use of all Bible applications published by JoshTechApps, including the King James Bible (KJV) and Women's Bible apps. By using any of our apps or making in-app purchases, you agree to be bound by these terms.
         </div>
-        
-        <h2>1. Acceptance of Terms</h2>
-        <p>By downloading, installing, or using the KJV Offline Bible App ("the App") developed by Joshtechapps ("Developer", "we", "us", or "our"), you agree to be bound by these Terms of Use. If you do not agree to these terms, please do not use the App.</p>
-        
-        <h2>2. Billing and In-App Purchase Terms</h2>
-        <p>This section outlines specific terms related to purchases within the App.</p>
-        
+
+        <div class="app-list">
+            <h3>📚 Apps Covered by This Unified Terms of Use</h3>
+            <div class="app-links">
+                <a href="https://play.google.com/store/apps/details?id=com.joshtechapps.womensbible" target="_blank">Women's Bible (KJV)</a>
+                <a href="https://play.google.com/store/apps/details?id=com.joshtechapps.kjvoffline" target="_blank">King James Bible (KJV)</a>
+                <!-- Future apps can be added here -->
+            </div>
+            <p><em>All listed apps share identical functionality: daily verses, prayers, quizzes, highlights, notes, and offline reading. These Terms apply equally to all.</em></p>
+        </div>
+
+        <div class="quick-nav">
+            <a href="#acceptance">1. Acceptance</a>
+            <a href="#purchases">2. In‑App Purchases</a>
+            <a href="#subscriptions">3. Subscriptions</a>
+            <a href="#localdata">4. Local Data</a>
+            <a href="#userconduct">5. User Conduct</a>
+            <a href="#notifications">6. Notifications</a>
+            <a href="#sharing">7. Sharing Content</a>
+            <a href="#ip">8. Intellectual Property</a>
+            <a href="#thirdparty">9. Third‑Party Services</a>
+            <a href="#age">10. Age Requirements</a>
+            <a href="#termination">11. Termination</a>
+            <a href="#liability">12. Liability</a>
+            <a href="#changes">13. Changes</a>
+            <a href="#contact">14. Contact</a>
+        </div>
+
+        <h2 id="acceptance">1. Acceptance of Terms</h2>
+        <p>By downloading, installing, or using any Bible application ("the App") developed by JoshTechApps ("Developer", "we", "us", or "our"), you agree to be bound by these Terms of Use. If you do not agree to these terms, please do not use the App.</p>
+
+        <h2 id="purchases">2. In‑App Purchases – Remove Ads</h2>
+        <p>All our Bible apps offer an optional "Remove Ads" feature that removes all advertisements (banner, interstitial, and native ads).</p>
+
         <h3>2.1 Available Purchase Options</h3>
-        <p>The App offers the following premium features through in-app purchases:</p>
         <table>
             <thead>
-                <tr>
-                    <th>Product</th>
-                    <th>Type</th>
-                    <th>Description</th>
-                    <th>Billing</th>
-                </tr>
+                <tr><th>Product</th><th>Type</th><th>Description</th><th>Billing</th></tr>
             </thead>
             <tbody>
-                <tr>
-                    <td><strong>6-Month Ad Removal</strong></td>
-                    <td>Subscription</td>
-                    <td>Removes all advertisements from the App for 6 months</td>
-                    <td>Auto-renews every 6 months unless cancelled</td>
-                </tr>
-                <tr>
-                    <td><strong>1-Year Ad Removal</strong></td>
-                    <td>Subscription</td>
-                    <td>Removes all advertisements from the App for 1 year</td>
-                    <td>Auto-renews every 1 year unless cancelled</td>
-                </tr>
-                <tr>
-                    <td><strong>Lifetime Ad Removal</strong></td>
-                    <td>One-Time Purchase</td>
-                    <td>Permanently removes all advertisements from the App</td>
-                    <td>Single payment, no renewal</td>
-                </tr>
+                <tr><td><strong>6‑Month Ad Removal</strong></td><td>Subscription</td><td>Removes all ads for 6 months</td><td>Auto‑renews every 6 months unless cancelled</td></tr>
+                <tr><td><strong>1‑Year Ad Removal</strong></td><td>Subscription</td><td>Removes all ads for 1 year</td><td>Auto‑renews every 1 year unless cancelled</td></tr>
+                <tr><td><strong>Lifetime Ad Removal</strong></td><td>One‑Time Purchase</td><td>Permanently removes all ads</td><td>Single payment, no renewal</td></tr>
             </tbody>
         </table>
-        
-        <div class="highlight-box">
-            <h3>2.2 Purchase and Payment</h3>
-            <p>All purchases are processed through Google Play Store and are subject to Google's payment terms and conditions. You acknowledge that:</p>
-            <ul>
-                <li>Payment will be charged to your Google Account at confirmation of purchase</li>
-                <li>Subscriptions automatically renew unless auto-renew is turned off at least 24 hours before the end of the current period</li>
-                <li>Your account will be charged for renewal within 24 hours prior to the end of the current period</li>
-                <li>You can manage subscriptions and turn off auto-renewal by going to your Google Account Settings after purchase</li>
-            </ul>
-        </div>
-        
-        <h3>2.3 Free Trial and Promotional Offers</h3>
-        <p>The App currently does not offer free trials. Any promotional pricing is clearly indicated at the time of purchase and applies only to the specified period.</p>
-        
-        <h3>2.4 Cancellation and Refunds</h3>
-        <div class="warning-box">
-            <p><strong>Refund Policy:</strong> All sales are final. Due to the nature of digital content, we do not provide refunds for in-app purchases unless required by applicable law.</p>
-            <p>You may cancel a subscription at any time through your Google Play Account Settings. The cancellation will take effect at the end of the current billing cycle, and you will retain access to the premium features until that date.</p>
-        </div>
-        
-        <h3>2.5 Restoration of Purchases</h3>
-        <p>Purchases are tied to your Google Account and can be restored on any compatible device using the "Restore Purchases" feature within the App. You are responsible for ensuring you are logged into the correct Google Account when making purchases.</p>
-        
-        <h2>3. App Usage and Intellectual Property</h2>
-        
-        <h3>3.1 License Grant</h3>
-        <p>We grant you a limited, non-exclusive, non-transferable, revocable license to use the App for personal, non-commercial purposes.</p>
-        
-        <h3>3.2 Bible Text</h3>
-        <p>The App contains the King James Version of the Holy Bible, which is in the public domain. The App itself, including its design, features, and functionality, is protected by copyright and other intellectual property laws.</p>
-        
-        <h3>3.3 Restrictions</h3>
-        <p>You agree not to:</p>
-        <ul>
-            <li>Reverse engineer, decompile, or disassemble the App</li>
-            <li>Use the App for any commercial purpose without our express written consent</li>
-            <li>Remove any copyright or other proprietary notices from the App</li>
-            <li>Share your premium account access with others</li>
-        </ul>
-        
-        <h2>4. Privacy</h2>
-        <p>Your privacy is important to us. Please review our <a href="https://joashtech.github.io/KJV-Bible-Privacy/" style="color: var(--secondary-color); text-decoration: none; font-weight: bold;">Privacy Policy</a> which explains how we collect, use, and protect your personal information.</p>
-        
-        <h2>5. Disclaimer of Warranties and Limitation of Liability</h2>
-        
-        <h3>5.1 "As Is" Basis</h3>
-        <p>The App is provided on an "AS IS" and "AS AVAILABLE" basis without warranties of any kind, either express or implied.</p>
-        
-        <h3>5.2 Limitation of Liability</h3>
-        <p>To the maximum extent permitted by applicable law, Joshtechapps shall not be liable for any indirect, incidental, special, consequential, or punitive damages resulting from your use or inability to use the App.</p>
-        
-        <h3>5.3 Bible Content Accuracy</h3>
-        <p>While we strive to provide accurate Bible text, we do not guarantee the absolute accuracy of the content. The App is intended for personal study and reference purposes only.</p>
-        
-        <h2>6. Changes to Terms</h2>
-        <p>We reserve the right to modify these Terms of Use at any time. We will notify users of significant changes through the App or via email. Continued use of the App after such changes constitutes acceptance of the new terms.</p>
-        
-        <h2>7. Termination</h2>
-        <p>We may terminate or suspend your access to the App immediately, without prior notice, for conduct that we believe violates these Terms or is harmful to other users, us, or third parties, or for any other reason.</p>
-        
-        <h2>8. Governing Law</h2>
-        <p>These Terms shall be governed by and construed in accordance with the laws of the jurisdiction where the Developer is based, without regard to its conflict of law provisions.</p>
-        
 
-</div>
-        
-        <h2>9. Acknowledgment</h2>
-        <p>By using the KJV Offline Bible App, you acknowledge that you have read these Terms of Use, understand them, and agree to be bound by them. You also acknowledge that these Terms together with the Privacy Policy constitute the complete agreement between you and Joshtechapps regarding the App.</p>
-    </div>
-    
- <!-- Added Website Link Section -->
-        <div class="website-link">
-            <p>Visit our official website for more apps, updates, support, and latest information:</p>
-            <a href="https://joshtechapps.netlify.app" target="_blank">
-                VISIT OUR WEBSITE
-            </a>
+        <h3>2.2 Purchase and Payment</h3>
+        <p>All purchases are processed through Google Play Store and are subject to Google's payment terms. You acknowledge that:</p>
+        <ul>
+            <li>Payment will be charged to your Google Account at confirmation of purchase.</li>
+            <li>Subscriptions automatically renew unless auto‑renew is turned off at least 24 hours before the end of the current period.</li>
+            <li>Your account will be charged for renewal within 24 hours prior to the end of the current period.</li>
+            <li>You can manage subscriptions and turn off auto‑renewal in your Google Account Settings.</li>
+        </ul>
+
+        <h3>2.3 Cancellation and Refunds</h3>
+        <div class="warning-box">
+            <p><strong>Refund Policy:</strong> All sales are final. Due to the nature of digital content, we do not provide refunds for in‑app purchases unless required by applicable law.</p>
+            <p>You may cancel a subscription at any time through Google Play. The cancellation will take effect at the end of the current billing cycle; you will retain ad‑free access until that date.</p>
         </div>
-       
+
+        <h3>2.4 Restoration of Purchases</h3>
+        <p>Purchases are tied to your Google Account. Use the "Restore Purchases" feature in the app's settings to regain premium access on new devices or after reinstallation.</p>
+
+        <h2 id="subscriptions">3. Subscriptions – Auto‑Renewal & Expiry</h2>
+        <p>Subscription‑based ad removal plans will automatically renew unless cancelled. If a subscription expires or is cancelled, advertisements will reappear in the app. Lifetime purchases are permanent and do not expire.</p>
+        <div class="highlight-box">
+            <p><strong>✅ Tip:</strong> To avoid unwanted charges, cancel your subscription at least 24 hours before the renewal date via your Google Play account settings.</p>
+        </div>
+
+        <h2 id="localdata">4. Local Data Storage</h2>
+        <p>Our Bible apps store the following data <strong>locally on your device</strong> only:</p>
+        <ul>
+            <li>Notes you write</li>
+            <li>Favorite verses</li>
+            <li>Quiz progress and scores</li>
+            <li>Highlighted verses</li>
+            <li>Reading plan progress</li>
+            <li>App preferences (font size, dark mode, etc.)</li>
+        </ul>
+        <p>We do <strong>not</strong> transmit this data to our servers. You can delete all local data by clearing the app's data in your device settings or by uninstalling the app.</p>
+
+        <h2 id="userconduct">5. User Conduct</h2>
+        <p>You agree to use the Apps responsibly. Prohibited activities include:</p>
+        <ul>
+            <li>Reverse engineering, decompiling, or attempting to extract the source code.</li>
+            <li>Using the Apps for any commercial purpose without our written consent.</li>
+            <li>Removing any copyright or proprietary notices.</li>
+            <li>Sharing your premium account access with others (purchases are per Google Account).</li>
+        </ul>
+
+        <h2 id="notifications">6. Notifications</h2>
+        <p>If you grant permission, the Apps may schedule daily notifications (e.g., morning and evening verses/prayers). You can disable notifications at any time in your device settings or within the app's settings.</p>
+
+        <h2 id="sharing">7. Sharing Content</h2>
+        <p>The Apps allow you to share verses, images, or certificates via your device's sharing system (e.g., WhatsApp, email, SMS). We do not collect or track the content you share; it is handled entirely by your device and the third‑party apps you choose.</p>
+
+        <h2 id="ip">8. Intellectual Property</h2>
+        <p>The King James Version of the Holy Bible is in the public domain. However, the app itself – including its design, code, graphics, sounds, quizzes, and original content – is the exclusive property of JoshTechApps and is protected by copyright and other intellectual property laws. You may not copy, modify, or redistribute any part of the app without our express permission.</p>
+
+        <h2 id="thirdparty">9. Third‑Party Services</h2>
+        <p>Our apps integrate with the following third‑party services. Their terms and privacy policies apply to your use:</p>
+        <table>
+            <thead><tr><th>Service</th><th>Purpose</th><th>Policy</th></tr></thead>
+            <tbody>
+                <tr><td>Google AdMob</td><td>Advertising</td><td><a href="https://support.google.com/admob/answer/6128543">AdMob Privacy</a></td></tr>
+                <tr><td>Unity Ads</td><td>Advertising</td><td><a href="https://unity.com/legal/privacy-policy">Unity Privacy</a></td></tr>
+                <tr><td>Liftoff (Vungle)</td><td>Advertising</td><td><a href="https://vungle.com/privacy/">Vungle Privacy</a></td></tr>
+                <tr><td>Firebase Analytics & Crashlytics</td><td>Analytics & crash reporting</td><td><a href="https://firebase.google.com/support/privacy">Firebase Privacy</a></td></tr>
+                <tr><td>Google Play</td><td>In‑app purchases, updates</td><td><a href="https://play.google.com/about/play-terms/">Play Terms</a></td></tr>
+            </tbody>
+        </table>
+        <div class="highlight-box">
+            <p><strong>🔗 Privacy Policy:</strong> For detailed information about data collection and your choices, please review our <a href="privacy-policy.html">Privacy Policy</a>.</p>
+        </div>
+
+        <h2 id="age">10. Age Requirements</h2>
+        <p>Our Bible apps are rated E for Everyone and are intended for users of all ages. However, by using the Apps, you confirm that you are at least 13 years of age, or if you are under 13, that you have obtained parental consent. We do not knowingly collect personal information from children under 13.</p>
+
+        <h2 id="termination">11. Termination</h2>
+        <p>We may terminate or suspend your access to the Apps immediately, without prior notice, for conduct that violates these Terms or is harmful to other users, us, or third parties. You may stop using the Apps at any time by uninstalling them from your device.</p>
+
+        <h2 id="liability">12. Limitation of Liability</h2>
+        <p>To the maximum extent permitted by law, JoshTechApps shall not be liable for any indirect, incidental, special, consequential, or punitive damages resulting from your use or inability to use the Apps. The Apps are provided on an "AS IS" and "AS AVAILABLE" basis without warranties of any kind.</p>
+
+        <h2 id="changes">13. Changes to Terms</h2>
+        <p>We reserve the right to modify these Terms at any time. We will notify users of significant changes through the Apps or via email. Continued use of the Apps after such changes constitutes acceptance of the new terms.</p>
+
+        <h2 id="contact">14. Contact Us</h2>
         <div class="contact-info">
-            <h3>Contact Information</h3>
-            <p>If you have any questions about these Terms of Use, please contact us at:</p>
-            <p><strong>Email:</strong> <a href="mailto:contactjoshtech@gmail.com" style="color: #3498db; text-decoration: none; font-weight: bold;">contactjoshtech@gmail.com</a></p>
-            <p><strong>Privacy Policy:</strong> <a href="https://joashtech.github.io/KJV-Bible-Privacy/" style="color: #3498db; text-decoration: none; font-weight: bold;" target="_blank">View Privacy Policy</a></p>
+            <h3>📬 Get in Touch</h3>
+            <p><strong>Email:</strong> <a href="mailto:contactjoshtech@gmail.com">contactjoshtech@gmail.com</a></p>
+            <p><strong>Website:</strong> <a href="https://joshtechapps.netlify.app" target="_blank">Open our website</a></p>
+            <p>We typically respond within 24‑48 hours.</p>
         </div>
-       
-        <h2>9. Acknowledgment</h2>
-        <p>By using the KJV Offline Bible App, you acknowledge that you have read these Terms of Use, understand them, and agree to be bound by them. You also acknowledge that these Terms together with the Privacy Policy constitute the complete agreement between you and Joshtechapps regarding the App.</p>
     </div>
-   
+
     <footer>
-        <p>© <span id="currentYear"></span> Joshtechapps. All rights reserved.</p>
+        <p>© <span id="currentYear"></span> JoshTechApps. All rights reserved.</p>
         <p>King James Version of the Bible is in the public domain.</p>
         <p>Google Play and the Google Play logo are trademarks of Google LLC.</p>
     </footer>
 
     <script>
-        // Automatically set current year (single year only)
         document.getElementById("currentYear").textContent = new Date().getFullYear();
     </script>
 </body>
